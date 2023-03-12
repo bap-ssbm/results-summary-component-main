@@ -1,0 +1,130 @@
+body{
+    margin: 0;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Hanken Grotesk', sans-serif;
+    flex-wrap: wrap;
+    font-size:18px;
+}
+
+main{
+    display: flex;
+    background-color: white;
+    height: 500px;
+    width: 700px;
+    border-radius: 20px;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.124);
+    
+}
+p,h2,h3,h1,h4{
+    margin: 0;
+}
+h1{
+    font-size: 60px;
+}
+h2{
+    font-size: 35px;
+}
+h4{
+    color: rgba(255, 255, 255, 0.465);
+}
+p{
+    color: rgba(255, 255, 255, 0.708);
+}
+.section{
+    height: 100%;
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    justify-content: space-between;
+    padding:40px;
+    box-sizing: border-box;
+}
+#result{
+    background-color: hsl(252, 100%, 67%);
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    text-align: center;
+    color: white;
+    
+}
+#circle{
+    background-color: rgba(0, 0, 0, 0.116);
+    background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    height: 200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.attribution{
+    flex-basis: 100%
+}
+.summary-results{
+    
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+}
+.summary-results>div:nth-child(2){
+    color:hsla(224, 30%, 27%, 0.578);
+}
+strong{
+    color:hsl(224, 30%, 27%);
+    font-weight: 800;
+}
+svg{
+    transform:translateY(2px);
+}
+#summary>div:nth-child(2){
+    margin-top: 25px;
+    background-color: hsla(0, 100%, 67%, 0.079);
+    color: hsl(0, 100%, 67%);
+}
+#summary>div:nth-child(3){
+    background-color: hsla(39, 100%, 56%, 0.082);
+    color: hsl(39, 100%, 56%);
+}
+#summary>div:nth-child(4){
+    background-color: hsla(166, 100%, 37%, 0.085);
+    color: hsl(166, 100%, 37%);
+}
+#summary>div:nth-child(5){
+    background-color: hsla(234, 85%, 45%, 0.087);
+    color: hsl(234, 85%, 45%);
+    margin-bottom: 30px;
+}
+#continue{
+   background-color:  hsl(224, 30%, 27%);
+   border: none;
+   border-radius: 25px;
+   padding: 13px;
+   color: white;
+   font-size: 18px;
+   
+   font-weight: 700;
+}
+#continue:hover{
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    cursor: pointer;
+}
+
+@media (max-width:699px) {
+    main{
+        flex-direction: column;
+        width: 100vw;
+        border-radius: 0px;
+        height:1000px;
+    }
+    .section{
+        
+        border-radius: 0px 0px 20px 20px;
+    }
+}
